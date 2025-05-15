@@ -1,6 +1,5 @@
 package me.proman4713.thewizardingworld.Items;
 
-import me.proman4713.thewizardingworld.Items.custom.FuelItem;
 import me.proman4713.thewizardingworld.Items.custom.StandardOllivandersWandItem;
 import me.proman4713.thewizardingworld.TheWizardingWorld;
 
@@ -27,9 +26,9 @@ public class ModItems {
 	);
 
 	public static final DeferredItem<Item> PHOENIX_FEATHER = ITEMS.register("phoenix_feather", () ->
-			new FuelItem(new Item.Properties()
+			new Item(new Item.Properties()
 					.fireResistant()
-					.rarity(Rarity.UNCOMMON), 216000) {
+					.rarity(Rarity.UNCOMMON)) {
 				@Override
 				public void appendHoverText(ItemStack pStack, TooltipContext pContext, List<Component> pTooltipComponents, TooltipFlag pFlag) {
 					pTooltipComponents.add(Component.translatable("tooltip.thewizardingworld.phoenix_feather"));
