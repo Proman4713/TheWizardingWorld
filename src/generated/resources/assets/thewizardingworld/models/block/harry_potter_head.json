@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "down": "thewizardingworld:block/harry_potter_head_bottom",
+    "east": "thewizardingworld:block/harry_potter_head_right",
+    "north": "thewizardingworld:block/harry_potter_head_front",
+    "particle": "thewizardingworld:block/harry_potter_head_front",
+    "south": "thewizardingworld:block/harry_potter_head_back",
+    "up": "thewizardingworld:block/harry_potter_head_top",
+    "west": "thewizardingworld:block/harry_potter_head_left"
+  }
+}

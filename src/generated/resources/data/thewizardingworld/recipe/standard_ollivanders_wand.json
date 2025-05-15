@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "minecraft:stick"
+    },
+    "B": {
+      "item": "thewizardingworld:phoenix_feather"
+    },
+    "C": {
+      "item": "minecraft:nether_star"
+    }
+  },
+  "pattern": [
+    "C  ",
+    " B ",
+    "  A"
+  ],
+  "result": {
+    "count": 1,
+    "id": "thewizardingworld:standard_ollivanders_wand"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_phoenix_feather": {
+      "conditions": {
+        "items": [
+          {
+            "items": "thewizardingworld:phoenix_feather"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "thewizardingworld:standard_ollivanders_wand"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_phoenix_feather"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "thewizardingworld:standard_ollivanders_wand"
+    ]
+  }
+}

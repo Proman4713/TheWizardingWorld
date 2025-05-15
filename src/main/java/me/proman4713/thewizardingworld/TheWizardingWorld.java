@@ -19,6 +19,7 @@ import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
 import net.neoforged.neoforge.event.server.ServerStartingEvent;
 
 import me.proman4713.thewizardingworld.Blocks.ModBlocks;
+import me.proman4713.thewizardingworld.Items.ModCreativeModeTabs;
 import me.proman4713.thewizardingworld.Items.ModItems;
 
 // The value here should match an entry in the META-INF/neoforge.mods.toml file
@@ -30,11 +31,20 @@ public class TheWizardingWorld
 	// Directly reference a slf4j logger
 	private static final Logger LOGGER = LogUtils.getLogger();
 
+	// TODO: To create wands: there will be a phoenix mob, when you shear it or kill it you get a phoenix feather
+	// TODO: Elder trees to create Elder Wands, the creation of the Elder Wand will involve the dragon egg to ensure that only one wand can be created
+
 	// The constructor for the mod class is the first code that is run when your mod is loaded.
 	// FML will recognize some parameter types like IEventBus or ModContainer and pass them in automatically.
 	public TheWizardingWorld(IEventBus modEventBus, ModContainer modContainer) {
 		// Register the commonSetup method for modloading
 		modEventBus.addListener(this::commonSetup);
+
+		// Register Mod additions
+		ModCreativeModeTabs.register(modEventBus);
+
+		ModItems.register(modEventBus);
+		ModBlocks.register(modEventBus);
 
 		// Register ourselves for server and other game events we are interested in.
 		// Note that this is necessary if and only if we want *this* class (TheWizardingWorld) to respond directly to events.

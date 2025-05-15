@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "thewizardingworld:block/harry_potter_head",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "thewizardingworld:block/harry_potter_head"
+    },
+    "facing=south": {
+      "model": "thewizardingworld:block/harry_potter_head",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "thewizardingworld:block/harry_potter_head",
+      "y": 270
+    }
+  }
+}

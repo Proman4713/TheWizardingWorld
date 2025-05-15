@@ -36,9 +36,9 @@ public class StandardOllivandersWandItem extends WandItem {
 	@Override
 	public void appendHoverText(ItemStack pStack, TooltipContext pContext, List<Component> pTooltipComponents, TooltipFlag pFlag) {
 		if (Screen.hasShiftDown()) {
-			pTooltipComponents.add(Component.translatable("tooltip.testforgemod.ollivanders_wand.expelliarmus"));
+			pTooltipComponents.add(Component.translatable("tooltip.thewizardingworld.ollivanders_wand.expelliarmus"));
 		} else {
-			pTooltipComponents.add(Component.translatable("tooltip.testforgemod.ollivanders_wand.lumos"));
+			pTooltipComponents.add(Component.translatable("tooltip.thewizardingworld.ollivanders_wand.lumos"));
 		}
 
 		super.appendHoverText(pStack, pContext, pTooltipComponents, pFlag);
